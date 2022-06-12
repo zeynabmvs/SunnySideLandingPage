@@ -9,10 +9,10 @@
     nav {
         position: relative;
 
-    }
-    
-    &__logo {
-        
+        @include breakpoint-up(medium){
+            margin-bottom: 82px;
+        }
+
     }
 
     &__toggle { //Mobile Menu
@@ -97,6 +97,14 @@
     &__cta2 {
         background-color: $yellow;
         color: $veryDarkDesaturatedBlue;
+    }
+
+    &__text {
+        color: $white;
+        font-family: $ff-fraunces;
+        text-align: center;
+        letter-spacing: 7px;
+        padding: 65px;
     }
     
 }
