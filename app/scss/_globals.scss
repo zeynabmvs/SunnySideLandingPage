@@ -84,7 +84,9 @@ a, a:visited, a:hover {
       &-ai-c {
           align-items: center;
       }
-  
+      &-d-c {
+        flex-direction: column;
+      }
   }
 
 .hide-for-mobile {
@@ -97,4 +99,11 @@ a, a:visited, a:hover {
     @include breakpoint-up(large){
         display: none;
     }
+}
+
+.button {
+    border-radius: 32px;
+    font-weight: 600;
+    font-family: $ff-fraunces;
+    padding: 17px 37px;
 }

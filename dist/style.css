@@ -119,6 +119,9 @@ a, a:visited, a:hover {
 .flex-ai-c {
   align-items: center;
 }
+.flex-d-c {
+  flex-direction: column;
+}
 
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
@@ -132,13 +135,11 @@ a, a:visited, a:hover {
   }
 }
 
-.overlay {
-  opacity: 0;
-  position: fixed;
-  top: 0;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+.button {
+  border-radius: 32px;
+  font-weight: 600;
+  font-family: "Fraunces", serif;
+  padding: 17px 37px;
 }
 
 .header {
@@ -156,7 +157,7 @@ a, a:visited, a:hover {
   display: block;
   width: 26px;
   height: 2px;
-  background-color: darkblue;
+  background-color: hsl(0deg, 0%, 100%);
   transition: all 300ms ease-in-out;
   transform-origin: 3px 1px;
 }
@@ -164,26 +165,22 @@ a, a:visited, a:hover {
   margin-bottom: 5px;
 }
 .header__links a {
-  color: hsl(0deg, 0%, 100%);
-  font-size: 1.062rem;
   padding: 17px 10px;
 }
-.header__links a:hover {
-  color: hsl(212deg, 27%, 19%);
-}
 .header__links a:not(:last-child) {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.062rem;
   margin-right: 13px;
 }
-.header a.header__cta {
+.header__links a:not(:last-child):hover {
+  color: hsl(212deg, 27%, 19%);
+}
+.header__cta {
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(212deg, 27%, 19%);
-  border-radius: 32px;
-  font-weight: 600;
-  font-family: "Fraunces", serif;
   transition: background 150ms ease-in-out;
-  padding: 17px 37px;
 }
-.header a.header__cta:hover {
+.header__cta:hover {
   background-color: rgba(255, 255, 255, 0.5);
   color: hsl(0deg, 0%, 100%);
 }
@@ -197,7 +194,6 @@ a, a:visited, a:hover {
   transform: rotate(-45deg);
 }
 .header__menu {
-  z-index: 2;
   position: absolute;
   width: calc(100% - 3rem);
   left: 50%;
@@ -206,11 +202,25 @@ a, a:visited, a:hover {
   margin-top: 1.5rem;
   padding: 1.625rem;
   text-align: center;
-  border-radius: 5px;
 }
-.header__menu a {
-  display: block;
-  color: hsl(198deg, 62%, 26%);
-  padding: 0.625rem;
+.header__menu a:not(:last-child) {
+  color: hsl(213deg, 9%, 39%);
   font-weight: 500;
+  padding: 0.75rem;
+  margin-bottom: 10px;
+}
+.header__cta2 {
+  background-color: hsl(51deg, 100%, 49%);
+  color: hsl(212deg, 27%, 19%);
+}
+
+.triangle {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 25px solid hsl(0deg, 0%, 100%);
+  border-bottom: 0px solid transparent;
 }/*# sourceMappingURL=style.css.map */
