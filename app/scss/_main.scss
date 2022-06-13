@@ -1,0 +1,48 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    &__text-box {
+        background-color: $white;
+        padding: 165px 112px 165px 165px;
+
+        &__title {
+            font-family: $ff-fraunces;
+            color: $veryDarkDesaturatedBlue;    
+            margin-bottom: 47px;
+        }
+
+        &__text {
+            margin-bottom: 47px;
+        }
+
+        &__more {
+            position: relative;
+            font-family: $ff-fraunces;
+            color: $veryDarkDesaturatedBlue;
+            font-size: 0.75rem;
+            font-weight: 800;
+            z-index: 1;
+            margin-bottom: 47px;
+
+            &::before {
+                content: " ";
+                display: block;
+                position: absolute;
+                background-color: $yellow;
+                height: 7px;
+                width: 114%;
+                border-radius: 5px;
+                top: 10px;
+                left: -5px;
+                opacity: 36%;
+                z-index: -1;
+            }
+
+            &:hover::before {
+                opacity: 100%;
+            }
+        }
+    }
+}

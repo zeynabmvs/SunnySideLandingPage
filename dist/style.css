@@ -102,9 +102,21 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 2rem;
+}
+@media (min-width: 64em) {
+  h2 {
+    font-size: 2.375rem;
+  }
+}
+
 p {
   line-height: 1.5;
   margin-bottom: 2.25rem;
+  margin-top: 0px;
+  color: hsl(232deg, 10%, 55%);
+  font-size: 1.1875;
 }
 
 a, a:visited, a:hover {
@@ -166,11 +178,6 @@ a, a:visited, a:hover {
 }
 .header nav {
   position: relative;
-}
-@media (min-width: 40em) {
-  .header nav {
-    margin-bottom: 82px;
-  }
 }
 .header__toggle > span {
   display: block;
@@ -239,6 +246,11 @@ a, a:visited, a:hover {
   letter-spacing: 7px;
   padding: 65px;
 }
+@media (min-width: 40em) {
+  .header__text {
+    padding: 82px;
+  }
+}
 
 .triangle {
   position: absolute;
@@ -249,4 +261,47 @@ a, a:visited, a:hover {
   border-top: 25px solid transparent;
   border-right: 25px solid hsl(0deg, 0%, 100%);
   border-bottom: 0px solid transparent;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.main__text-box {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 165px 112px 165px 165px;
+}
+.main__text-box__title {
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
+  margin-bottom: 47px;
+}
+.main__text-box__text {
+  margin-bottom: 47px;
+}
+.main__text-box__more {
+  position: relative;
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
+  font-size: 0.75rem;
+  font-weight: 800;
+  z-index: 1;
+  margin-bottom: 47px;
+}
+.main__text-box__more::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-color: hsl(51deg, 100%, 49%);
+  height: 7px;
+  width: 114%;
+  border-radius: 5px;
+  top: 10px;
+  left: -5px;
+  opacity: 36%;
+  z-index: -1;
+}
+.main__text-box__more:hover::before {
+  opacity: 100%;
 }/*# sourceMappingURL=style.css.map */

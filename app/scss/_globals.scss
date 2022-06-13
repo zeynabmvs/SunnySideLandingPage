@@ -31,7 +31,6 @@ h1, h2, h3 {
     margin-top: 0px;
     // font-weight: 300;
     // line-height: 1.15;
-    // color: $darkBlue;
 }
 
 
@@ -44,19 +43,22 @@ h1 {
     }
 }
 
-// h2 {
-//     font-size: 1.875rem;
-//     margin-bottom: 1.5625rem;
+h2 {
+    font-size: 2rem;
+    // margin-bottom: 1.5625rem;
 
-//     @include breakpoint-up(large) {
-//         font-size: 2.25rem;
-//         margin-bottom: 2.25rem;
-//     }
-// }
+    @include breakpoint-up(large) {
+        font-size: 2.375rem;
+        // margin-bottom: 2.25rem;
+    }
+}
 
 p {
     line-height: 1.5;
     margin-bottom: 2.25rem;
+    margin-top: 0px;
+    color: $darkGrayishBlue;
+    font-size: 1.1875; //18px
 }
 
 a, a:visited, a:hover {
