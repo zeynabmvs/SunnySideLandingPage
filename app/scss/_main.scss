@@ -1,16 +1,48 @@
 .main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template: repeat(6, 1fr);
+
+    @include breakpoint-up(medium) {
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    }
+
+    &__item {
+        // min-height: 310px;
+        // min-width: 370px;
+        
+        @include breakpoint-up(medium) {
+            // min-height: 400px;
+            // min-width: 400px;
+            // padding: 165px 112px 165px 165px;
+        
+        }
+
+    }
+
+    &__wrapper {
+        padding: 71px 28px 67px 28px;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
 
     &__text-box {
         background-color: $white;
-        padding: 165px 112px 165px 165px;
+        margin: auto;
+
+
+        @include breakpoint-up(medium) {
+            width: 65%;
+
+        }
 
         &__title {
             font-family: $ff-fraunces;
             color: $veryDarkDesaturatedBlue;    
             margin-bottom: 47px;
+            width: 70%;
         }
 
         &__text {
@@ -45,4 +77,64 @@
             }
         }
     }
+
+    &__image-box {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__it-box {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        color: $darkDesaturatedCyan;
+        text-align: center;
+
+        min-height: 600px;
+
+        display: flex;
+        justify-content: end;
+        align-content: center;
+        flex-direction: column;
+
+
+        // padding: 71px 28px 67px 28px;
+
+        // @include breakpoint-up(medium) {
+        
+        // }
+
+        &__title {
+            font-family: $ff-fraunces;
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 1.0625rem;
+            color: $darkDesaturatedCyan;
+
+        }
+    }
 }
+
+// @include breakpoint-up(medium) {
+//     .image-box2, .image-box4 {
+//         display: none;
+//     }
+
+//     .image-box1, .image-box3 {
+//         display: block;
+//     }
+// }
+
+// @include breakpoint-down(medium) {
+//     .image-box1, .image-box3 {
+//         display: none;
+//     }
+
+//     .image-box2, .image-box4 {
+//         display: block;
+//     }
+// }
