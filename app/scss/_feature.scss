@@ -7,20 +7,12 @@
     }
 
     &__item {
-        // min-height: 310px;
-        // min-width: 370px;
-        
-        @include breakpoint-up(medium) {
-            // min-height: 400px;
-            // min-width: 400px;
-            // padding: 165px 112px 165px 165px;
-        
-        }
+
 
     }
 
     &__wrapper {
-        padding: 71px 28px 67px 28px;
+        padding: 4.4375rem 1.75rem 4.1875rem 1.75rem;
 
         display: flex;
         justify-content: center;
@@ -41,12 +33,12 @@
         &__title {
             // font-family: $ff-fraunces;
             color: $veryDarkDesaturatedBlue;    
-            margin-bottom: 47px;
+            margin-bottom: 2.9375rem;
             width: 70%;
         }
 
         &__text {
-            margin-bottom: 47px;
+            margin-bottom: 2.9375rem;
         }
 
         &__more {
@@ -56,18 +48,18 @@
             font-size: 0.75rem;
             font-weight: 800;
             z-index: 1;
-            margin-bottom: 47px;
+            margin-bottom: 2.9375rem;
 
             &::before {
                 content: " ";
                 display: block;
                 position: absolute;
                 background-color: $yellow;
-                height: 7px;
+                height: 43.75rem;
                 width: 114%;
-                border-radius: 5px;
-                top: 10px;
-                left: -5px;
+                border-radius: 31.25rem;
+                top: 0.625rem;
+                left: -0.3125rem;
                 opacity: 36%;
                 z-index: -1;
             }
@@ -92,22 +84,14 @@
         color: $darkDesaturatedCyan;
         text-align: center;
 
-        min-height: 600px;
+        min-height: 37.5rem;
 
         display: flex;
         justify-content: end;
         align-content: center;
         flex-direction: column;
 
-
-        // padding: 71px 28px 67px 28px;
-
-        // @include breakpoint-up(medium) {
-        
-        // }
-
         &__title {
-            // font-family: $ff-fraunces;
             font-weight: 900;
         }
 
@@ -117,23 +101,3 @@
         }
     }
 }
-
-// @include breakpoint-up(medium) {
-//     .image-box2, .image-box4 {
-//         display: none;
-//     }
-
-//     .image-box1, .image-box3 {
-//         display: block;
-//     }
-// }
-
-// @include breakpoint-down(medium) {
-//     .image-box1, .image-box3 {
-//         display: none;
-//     }
-
-//     .image-box2, .image-box4 {
-//         display: block;
-//     }
-// }

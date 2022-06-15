@@ -12,8 +12,8 @@
 	h2 {
 		color: $grayishBlue;
 		margin-bottom: 4.25rem;
-		font-size: 18px;
-		letter-spacing: 3px;
+		font-size: 1.125rem;
+		letter-spacing: 0.1875rem;
 		
 		@include breakpoint-up(medium) {
 			margin-bottom: 3.125rem;

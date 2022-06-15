@@ -90,16 +90,16 @@ body.noscroll {
 }
 
 h1, h2, h3 {
-  margin-top: 0px;
+  margin-top: 0rem;
   font-family: "Fraunces", serif;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 @media (min-width: 64em) {
   h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
@@ -119,7 +119,7 @@ h2 {
 p {
   line-height: 1.5;
   margin-bottom: 2.25rem;
-  margin-top: 0px;
+  margin-top: 0rem;
   color: hsl(232deg, 10%, 55%);
   font-size: 1.0625rem;
 }
@@ -130,11 +130,11 @@ a, a:visited, a:hover {
 
 .container {
   margin: 0 auto;
-  padding: 31px 24px;
+  padding: 1.9375rem 1.5rem;
 }
 @media (min-width: 64em) {
   .container {
-    padding: 46px 42px;
+    padding: 2.875rem 2.625rem;
   }
 }
 
@@ -167,10 +167,10 @@ a, a:visited, a:hover {
 }
 
 .button {
-  border-radius: 32px;
+  border-radius: 2rem;
   font-weight: 600;
   font-family: "Fraunces", serif;
-  padding: 17px 37px;
+  padding: 1.0625rem 2.3125rem;
 }
 
 .header {
@@ -186,22 +186,22 @@ a, a:visited, a:hover {
 }
 .header__toggle > span {
   display: block;
-  width: 26px;
-  height: 2px;
+  width: 1.625rem;
+  height: 0.125rem;
   background-color: hsl(0deg, 0%, 100%);
   transition: all 300ms ease-in-out;
-  transform-origin: 3px 1px;
+  transform-origin: 0.1875rem 0.0625rem;
 }
 .header__toggle > span:not(:last-child) {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 .header__links a {
-  padding: 17px 10px;
+  padding: 1.0625rem 0.625rem;
 }
 .header__links a:not(:last-child) {
   color: hsl(0deg, 0%, 100%);
   font-size: 1.062rem;
-  margin-right: 13px;
+  margin-right: 0.8125rem;
 }
 .header__links a:not(:last-child):hover {
   color: hsl(212deg, 27%, 19%);
@@ -238,7 +238,7 @@ a, a:visited, a:hover {
   color: hsl(213deg, 9%, 39%);
   font-weight: 500;
   padding: 0.75rem;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .header__cta2 {
   background-color: hsl(51deg, 100%, 49%);
@@ -248,24 +248,24 @@ a, a:visited, a:hover {
   color: hsl(0deg, 0%, 100%);
   font-family: "Fraunces", serif;
   text-align: center;
-  letter-spacing: 7px;
-  padding: 65px;
+  letter-spacing: 0.4375rem;
+  padding: 4.0625rem;
 }
 @media (min-width: 40em) {
   .header__text {
-    padding: 82px;
+    padding: 5.125rem;
   }
 }
 
 .triangle {
   position: absolute;
-  top: -25px;
+  top: -rem(25);
   right: 0;
   width: 0;
   height: 0;
-  border-top: 25px solid transparent;
-  border-right: 25px solid hsl(0deg, 0%, 100%);
-  border-bottom: 0px solid transparent;
+  border-top: 1.5625rem solid transparent;
+  border-right: 1.5625rem solid hsl(0deg, 0%, 100%);
+  border-bottom: 0rem solid transparent;
 }
 
 .feature {
@@ -278,7 +278,7 @@ a, a:visited, a:hover {
   }
 }
 .feature__wrapper {
-  padding: 71px 28px 67px 28px;
+  padding: 4.4375rem 1.75rem 4.1875rem 1.75rem;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -295,11 +295,11 @@ a, a:visited, a:hover {
 }
 .feature__text-box__title {
   color: hsl(212deg, 27%, 19%);
-  margin-bottom: 47px;
+  margin-bottom: 2.9375rem;
   width: 70%;
 }
 .feature__text-box__text {
-  margin-bottom: 47px;
+  margin-bottom: 2.9375rem;
 }
 .feature__text-box__more {
   position: relative;
@@ -308,18 +308,18 @@ a, a:visited, a:hover {
   font-size: 0.75rem;
   font-weight: 800;
   z-index: 1;
-  margin-bottom: 47px;
+  margin-bottom: 2.9375rem;
 }
 .feature__text-box__more::before {
   content: " ";
   display: block;
   position: absolute;
   background-color: hsl(51deg, 100%, 49%);
-  height: 7px;
+  height: 43.75rem;
   width: 114%;
-  border-radius: 5px;
-  top: 10px;
-  left: -5px;
+  border-radius: 31.25rem;
+  top: 0.625rem;
+  left: -0.3125rem;
   opacity: 36%;
   z-index: -1;
 }
@@ -337,7 +337,7 @@ a, a:visited, a:hover {
   background-size: cover;
   color: hsl(167deg, 40%, 24%);
   text-align: center;
-  min-height: 600px;
+  min-height: 37.5rem;
   display: flex;
   justify-content: end;
   align-content: center;
@@ -364,8 +364,8 @@ a, a:visited, a:hover {
 .clients h2 {
   color: hsl(210deg, 4%, 67%);
   margin-bottom: 4.25rem;
-  font-size: 18px;
-  letter-spacing: 3px;
+  font-size: 1.125rem;
+  letter-spacing: 0.1875rem;
 }
 @media (min-width: 40em) {
   .clients h2 {
@@ -460,6 +460,11 @@ a, a:visited, a:hover {
 .footer__links a:not(:last-child) {
   margin-right: 5.375rem;
 }
+@media (max-width: 39.9375em) {
+  .footer__links a:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}
 .footer__social a {
   display: inline-block;
 }
@@ -471,4 +476,9 @@ a, a:visited, a:hover {
 }
 .footer__social a:not(:last-child) {
   margin-right: 1.8125rem;
+}
+@media (max-width: 39.9375em) {
+  .footer__social a:not(:last-child) {
+    margin-right: 0.7rem;
+  }
 }/*# sourceMappingURL=style.css.map */

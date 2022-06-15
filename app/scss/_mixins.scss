@@ -1,5 +1,6 @@
 // Notice: use keyword is depricated, replace it with import
 @use "sass:map";
+@use "sass:math";
 
 // Breakpoints
 @media (min-width: 64em){
@@ -27,3 +28,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "64em"
     }
 }
 
+//px to rem
+@function rem($pixels, $context: 16){
+    @return (math.div($pixels, $context)) * 1rem;
+}
