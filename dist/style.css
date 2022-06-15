@@ -433,4 +433,42 @@ a, a:visited, a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.footer {
+  background-color: rgb(144, 212, 197);
+  text-align: center;
+  padding: 3.9375rem 2.5rem;
+}
+.footer a {
+  color: hsl(167deg, 40%, 24%);
+}
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+.footer__links {
+  margin-bottom: 5.375em;
+}
+.footer__links a {
+  color: hsl(168deg, 34%, 41%);
+  transition: color 150ms ease-in-out;
+}
+.footer__links a:hover {
+  color: hsl(0deg, 0%, 100%);
+}
+.footer__links a:not(:last-child) {
+  margin-right: 5.375rem;
+}
+.footer__social a {
+  display: inline-block;
+}
+.footer__social a svg path {
+  transition: fill 150ms ease-in-out;
+}
+.footer__social a:hover svg path {
+  fill: hsl(0deg, 0%, 100%);
+}
+.footer__social a:not(:last-child) {
+  margin-right: 1.8125rem;
 }/*# sourceMappingURL=style.css.map */

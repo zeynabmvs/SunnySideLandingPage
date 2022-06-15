@@ -1,0 +1,120 @@
+.footer{
+    background-color: $lightCyan;
+    // padding: 2.5rem;
+    text-align: center;
+    padding:  3.9375rem 2.5rem;
+
+    .container {
+        // @include breakpoint-up(large){
+        //     display: grid;
+        //     grid-template-columns: 2fr 1fr 1fr 3fr;
+        //     grid-template-rows: 1fr auto;
+        //     grid-template-areas: 
+        //         "logo links1 links2 cta"
+        //         "social links1 links2 copyright";
+        //     justify-items: start;
+        //     gap: 1rem;
+        // }
+
+    }
+
+    a {
+        color: $darkDesaturatedCyan;
+    }
+    
+    &__logo {
+        display: inline-block;
+        margin-bottom: 3rem;
+
+        @include breakpoint-down(medium){
+            // margin-bottom: 1.875rem;
+        }
+
+        // @include breakpoint-up(large){
+        //     grid-area: logo;
+        // }
+    }
+
+    &__links {
+        margin-bottom: 5.375em;
+        
+        // display: flex;
+        // justify-content: space-between;
+        // flex-direction: column;
+        // align-items: center;
+        // font-size: 0.9375rem;
+
+        // @include breakpoint-up(large){
+        //     justify-content: space-between;
+        //     align-items: start;
+        // }
+
+        // &.col1 {
+
+        //     @include breakpoint-up(large){
+        //         grid-area: links1;
+        //     }
+        // }
+
+        // &.col2 {
+            
+        //     @include breakpoint-down(medium){
+        //         margin-bottom: 1.875rem;
+        //     }
+
+        //     @include breakpoint-up(large){
+        //         grid-area: links2;
+        //     }
+        // }
+
+        a {
+            color: $darkModerateCyan;
+            // line-height: 2.25;
+            transition: color 150ms ease-in-out;
+      
+            &:hover {
+              color: $white;
+            }
+
+            &:not(:last-child){
+                margin-right: 5.375rem;
+            }
+          }
+
+    }
+
+    &__social {
+        // display: flex;
+        // justify-content: center;
+
+        @include breakpoint-down(medium){
+            // margin-bottom: 1.875rem;
+        }
+        
+        a {
+            display: inline-block;
+            // height: 1.25rem;
+
+            svg path {
+                transition: fill 150ms ease-in-out;
+            }
+            &:hover svg path {
+                fill: $white;
+            }
+
+            &:not(:last-child){
+                margin-right: 1.8125rem;
+            }
+        }
+
+        a:not(:last-child) {
+            // margin-right: 1rem;
+        }
+
+        @include breakpoint-up(large){
+            // grid-area: social;
+            // align-self: end;
+        }
+    }
+
+}
