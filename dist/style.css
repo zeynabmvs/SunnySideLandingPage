@@ -91,6 +91,7 @@ body.noscroll {
 
 h1, h2, h3 {
   margin-top: 0px;
+  font-family: "Fraunces", serif;
 }
 
 h1 {
@@ -120,7 +121,7 @@ p {
   margin-bottom: 2.25rem;
   margin-top: 0px;
   color: hsl(232deg, 10%, 55%);
-  font-size: 1.1875;
+  font-size: 1.0625rem;
 }
 
 a, a:visited, a:hover {
@@ -293,7 +294,6 @@ a, a:visited, a:hover {
   }
 }
 .feature__text-box__title {
-  font-family: "Fraunces", serif;
   color: hsl(212deg, 27%, 19%);
   margin-bottom: 47px;
   width: 70%;
@@ -344,10 +344,94 @@ a, a:visited, a:hover {
   flex-direction: column;
 }
 .feature__it-box__title {
-  font-family: "Fraunces", serif;
   font-weight: 900;
 }
 .feature__it-box p {
-  font-size: 1.0625rem;
   color: hsl(167deg, 40%, 24%);
+}
+
+.clients {
+  text-align: center;
+  background-color: bisque;
+  padding: 4.25rem 2.3125rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media (min-width: 40em) {
+  .clients {
+    padding: 10.25rem 10.625rem;
+  }
+}
+.clients h2 {
+  color: hsl(210deg, 4%, 67%);
+  margin-bottom: 4.25rem;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+@media (min-width: 40em) {
+  .clients h2 {
+    margin-bottom: 3.125rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .client__grid {
+    display: flex;
+  }
+}
+.client__item {
+  padding: 0.9375rem;
+}
+.client__image {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 2.5625rem;
+}
+@media (min-width: 40em) {
+  .client__image {
+    margin-bottom: 4.25rem;
+  }
+}
+.client__text {
+  color: hsl(232deg, 10%, 55%);
+  margin-bottom: 2.5625rem;
+}
+@media (min-width: 40em) {
+  .client__text {
+    margin-bottom: 4.875rem;
+  }
+}
+.client__name {
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
+  margin-bottom: 1.125rem;
+}
+@media (min-width: 40em) {
+  .client__name {
+    margin-bottom: 1.0625rem;
+  }
+}
+.client__job {
+  color: hsl(210deg, 4%, 67%);
+  font-size: 0.9375rem;
+}
+
+.gallery {
+  display: grid;
+  height: 28rem;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+}
+@media (min-width: 40em) {
+  .gallery {
+    grid-template: repeat(1, 1fr)/repeat(4, 1fr);
+  }
+}
+.gallery__item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */

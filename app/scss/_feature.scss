@@ -39,7 +39,7 @@
         }
 
         &__title {
-            font-family: $ff-fraunces;
+            // font-family: $ff-fraunces;
             color: $veryDarkDesaturatedBlue;    
             margin-bottom: 47px;
             width: 70%;
@@ -107,12 +107,11 @@
         // }
 
         &__title {
-            font-family: $ff-fraunces;
+            // font-family: $ff-fraunces;
             font-weight: 900;
         }
 
         p {
-            font-size: 1.0625rem;
             color: $darkDesaturatedCyan;
 
         }

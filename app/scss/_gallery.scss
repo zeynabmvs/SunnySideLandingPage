@@ -1,0 +1,16 @@
+.gallery {
+    display: grid;
+    height: 28rem;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+    @include breakpoint-up(medium) {
+        grid-template: repeat(1, 1fr) / repeat(4, 1fr);
+
+    }
+    
+    &__item {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
