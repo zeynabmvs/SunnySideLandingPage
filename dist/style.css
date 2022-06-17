@@ -315,7 +315,7 @@ a, a:visited, a:hover {
   display: block;
   position: absolute;
   background-color: hsl(51deg, 100%, 49%);
-  height: 43.75rem;
+  height: 0.5rem;
   width: 114%;
   border-radius: 31.25rem;
   top: 0.625rem;

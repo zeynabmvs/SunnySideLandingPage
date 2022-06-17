@@ -31,7 +31,6 @@
         }
 
         &__title {
-            // font-family: $ff-fraunces;
             color: $veryDarkDesaturatedBlue;    
             margin-bottom: 2.9375rem;
             width: 70%;
@@ -55,7 +54,7 @@
                 display: block;
                 position: absolute;
                 background-color: $yellow;
-                height: 43.75rem;
+                height: rem(8);
                 width: 114%;
                 border-radius: 31.25rem;
                 top: 0.625rem;
