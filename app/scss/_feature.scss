@@ -1,29 +1,18 @@
 .feature {
     display: grid;
-    grid-template: repeat(6, 1fr);
+    grid-template: repeat(6, 1fr) / 1fr;
 
     @include breakpoint-up(medium) {
         grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     }
 
-    &__item {
-
-
-    }
-
     &__wrapper {
         padding: 4.4375rem 1.75rem 4.1875rem 1.75rem;
-
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
     }
 
-    &__text-box {
+    .text-box {
         background-color: $white;
         margin: auto;
-
 
         @include breakpoint-up(medium) {
             width: 65%;
@@ -69,17 +58,18 @@
         }
     }
 
-    &__image-box {
+    .image-box {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    &__it-box {
+    .it-box {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        
+        padding: rem(10);
+
         color: $darkDesaturatedCyan;
         text-align: center;
 
