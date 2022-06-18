@@ -1,0 +1,20 @@
+{
+  "name": "sunnysidelandingpage",
+  "version": "1.0.0",
+  "description": "Tis is a challlenge from frontendmentor.io coded by me\r link to the challenge: https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef/hub/sunnyside-agency-landing-page-OWxedmH8GF",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeynabmvs/SunnySideLandingPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeynabmvs/SunnySideLandingPage/issues"
+  },
+  "homepage": "https://github.com/zeynabmvs/SunnySideLandingPage#readme"
+}
