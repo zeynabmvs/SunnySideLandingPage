@@ -1,9 +1,91 @@
-.feature {
-    display: grid;
-    grid-template: repeat(6, 1fr) / 1fr;
+.section-1 {
+    flex-direction: column-reverse;
 
     @include breakpoint-up(medium) {
-        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        flex-direction: row;
+    }
+
+    picture img {
+        width: 100%;
+
+        @include breakpoint-up(medium) {
+            width: 50vw;
+        }
+
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5em;
+        padding: 6rem 2em;
+
+        @include breakpoint-up(medium) {
+            padding: 0rem 2em;
+            width: 50vw;
+            justify-content: center;
+            gap: clamp(2rem, 1vw, 2.5rem);
+        }
+
+
+        &__title,
+        &__text,
+        &__link {
+            display: block;
+            margin: 0 auto;
+            text-align: left;
+            width: 70%;
+        }
+
+        &__title {
+            font-size: clamp(2rem, 3vw, 2.75rem);
+            color: $veryDarkDesaturatedBlue;
+            margin-bottom: 2.9375rem;
+            width: 70%;
+        }
+
+        &__text {
+            font-size: clamp(0.75rem, 1vw, 1.25rem);
+            margin-bottom: 2.9375rem;
+        }
+
+        &__link {
+            position: relative;
+            font-family: $ff-fraunces;
+            color: $veryDarkDesaturatedBlue;
+            font-size: 0.75rem;
+            font-weight: 800;
+            z-index: 1;
+            margin-bottom: 2.9375rem;
+
+            &::before {
+                content: " ";
+                display: block;
+                position: absolute;
+                background-color: $yellow;
+                height: rem(8);
+                width: 27%;
+                border-radius: 31.25rem;
+                top: 0.625rem;
+                left: -0.3125rem;
+                opacity: 36%;
+                z-index: -1;
+            }
+
+            &:hover::before {
+                opacity: 100%;
+            }
+        }
+    }
+}
+
+
+.feature {
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr;
+
+    @include breakpoint-up(medium) {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     }
 
     &__wrapper {

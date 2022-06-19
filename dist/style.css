@@ -153,6 +153,9 @@ a, a:visited, a:hover {
 .flex-d-c {
   flex-direction: column;
 }
+.flex-d-r {
+  flex-direction: row;
+}
 
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
@@ -251,7 +254,7 @@ a, a:visited, a:hover {
   letter-spacing: 0.4375rem;
   padding: 4.0625rem;
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   .header__text {
     padding: 5.125rem;
   }
@@ -268,13 +271,85 @@ a, a:visited, a:hover {
   border-bottom: 0rem solid transparent;
 }
 
+.section-1 {
+  flex-direction: column-reverse;
+}
+@media (min-width: 50em) {
+  .section-1 {
+    flex-direction: row;
+  }
+}
+.section-1 picture img {
+  width: 100%;
+}
+@media (min-width: 50em) {
+  .section-1 picture img {
+    width: 50vw;
+  }
+}
+.section-1 .article {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  padding: 6rem 2em;
+}
+@media (min-width: 50em) {
+  .section-1 .article {
+    padding: 0rem 2em;
+    width: 50vw;
+    justify-content: center;
+    gap: clamp(2rem, 1vw, 2.5rem);
+  }
+}
+.section-1 .article__title, .section-1 .article__text, .section-1 .article__link {
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  width: 70%;
+}
+.section-1 .article__title {
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  color: hsl(212deg, 27%, 19%);
+  margin-bottom: 2.9375rem;
+  width: 70%;
+}
+.section-1 .article__text {
+  font-size: clamp(0.75rem, 1vw, 1.25rem);
+  margin-bottom: 2.9375rem;
+}
+.section-1 .article__link {
+  position: relative;
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
+  font-size: 0.75rem;
+  font-weight: 800;
+  z-index: 1;
+  margin-bottom: 2.9375rem;
+}
+.section-1 .article__link::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-color: hsl(51deg, 100%, 49%);
+  height: 0.5rem;
+  width: 27%;
+  border-radius: 31.25rem;
+  top: 0.625rem;
+  left: -0.3125rem;
+  opacity: 36%;
+  z-index: -1;
+}
+.section-1 .article__link:hover::before {
+  opacity: 100%;
+}
+
 .feature {
   display: grid;
-  grid-template: repeat(6, 1fr)/1fr;
+  grid-template: repeat(4, 1fr)/1fr;
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   .feature {
-    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr);
   }
 }
 .feature__wrapper {
@@ -284,7 +359,7 @@ a, a:visited, a:hover {
   background-color: hsl(0deg, 0%, 100%);
   margin: auto;
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   .feature .text-box {
     width: 65%;
   }
@@ -353,7 +428,7 @@ a, a:visited, a:hover {
   align-items: flex-start;
   justify-content: space-between;
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   .clients {
     padding: 10.25rem 10.625rem;
   }
@@ -364,13 +439,13 @@ a, a:visited, a:hover {
   font-size: 1.125rem;
   letter-spacing: 0.1875rem;
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   .clients h2 {
     margin-bottom: 3.125rem;
   }
 }
 
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   .client__grid {
     display: flex;
   }
@@ -387,7 +462,7 @@ a, a:visited, a:hover {
   background-position: center center;
   margin-bottom: 2.5625rem;
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   .client__image {
     margin-bottom: 4.25rem;
   }
@@ -396,7 +471,7 @@ a, a:visited, a:hover {
   color: hsl(232deg, 10%, 55%);
   margin-bottom: 2.5625rem;
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   .client__text {
     margin-bottom: 4.875rem;
   }
@@ -406,7 +481,7 @@ a, a:visited, a:hover {
   color: hsl(212deg, 27%, 19%);
   margin-bottom: 1.125rem;
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   .client__name {
     margin-bottom: 1.0625rem;
   }
@@ -421,7 +496,7 @@ a, a:visited, a:hover {
   height: 28rem;
   grid-template: repeat(2, 1fr)/repeat(2, 1fr);
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   .gallery {
     grid-template: repeat(1, 1fr)/repeat(4, 1fr);
   }
@@ -457,7 +532,7 @@ a, a:visited, a:hover {
 .footer__links a:not(:last-child) {
   margin-right: 5.375rem;
 }
-@media (max-width: 39.9375em) {
+@media (max-width: 49.9375em) {
   .footer__links a:not(:last-child) {
     margin-right: 1.5rem;
   }
@@ -474,7 +549,7 @@ a, a:visited, a:hover {
 .footer__social a:not(:last-child) {
   margin-right: 1.8125rem;
 }
-@media (max-width: 39.9375em) {
+@media (max-width: 49.9375em) {
   .footer__social a:not(:last-child) {
     margin-right: 0.7rem;
   }

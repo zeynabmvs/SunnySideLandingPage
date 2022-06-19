@@ -9,11 +9,11 @@
 
 
 
-// 640px, 1024px, 1400px
-$breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
+// 800px, 1024px, 1400px
+$breakpoints-up: ("medium": "50em", "large": "64em", "xlarge": "87.5em");
 
 // 639px, 1023px, 1399px
-$breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "64em");
+$breakpoints-down: ("small": "49.9375em", "medium": "63.9375em", "large": "64em");
 
 
 @mixin breakpoint-up($size) {
@@ -28,7 +28,6 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "64em"
     }
 }
 
-//px to rem
-@function rem($pixels, $context: 16){
-    @return (math.div($pixels, $context)) * 1rem;
-}
+@mixin color-opacity($color, $opacity, $property) {
+    #{$property}: rgba($color, $opacity);
+ }
