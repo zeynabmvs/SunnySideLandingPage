@@ -1,26 +1,32 @@
 .header {
-    background-image: url('/images/desktop/image-header.jpg');
+    background-image: url('/images/mobile/image-header.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 50rem;
 
+    @include breakpoint-up(medium) {
+        background-image: url('/images/desktop/image-header.jpg');
+    }
+
     nav {
         position: relative;
 
     }
 
-    &__toggle { //Mobile Menu
+    &__toggle {
+        //Mobile Menu
 
-        > span {
+        >span {
             display: block;
             width: rem(26);
             height: rem(2);
             background-color: $white;
-            transition: all 300ms ease-in-out;   
+            transition: all 300ms ease-in-out;
             transform-origin: rem(3) rem(1);
-            &:not(:last-child){
+
+            &:not(:last-child) {
                 margin-bottom: rem(5);
             }
         }
@@ -31,6 +37,7 @@
         a {
             padding: rem(17) rem(10);
         }
+
         a:not(:last-child) {
             color: $white;
             font-size: 1.062rem;
@@ -57,21 +64,21 @@
     // Hamburgur open styles
     &.open {
         .header__toggle {
-            > span:first-child {
+            >span:first-child {
                 transform: rotate(45deg);
             }
-            
-            > span:nth-child(2) {
+
+            >span:nth-child(2) {
                 opacity: 0;
             }
-            
-            > span:last-child {
+
+            >span:last-child {
                 transform: rotate(-45deg);
             }
         }
     }
 
-    &__menu {  
+    &__menu {
         // z-index: 2;     
         position: absolute;
         width: calc(100% - 3rem);
@@ -102,12 +109,12 @@
         letter-spacing: rem(7);
         padding: rem(65);
 
-        
-        @include breakpoint-up(medium){
+
+        @include breakpoint-up(medium) {
             padding: rem(82);
         }
     }
-    
+
 }
 
 .triangle {
@@ -115,8 +122,8 @@
     top: -rem(25);
     right: 0;
     width: 0;
-	height: 0;
-	border-top: rem(25) solid transparent;
-	border-right: rem(25) solid $white;
-	border-bottom: rem(0) solid transparent;
+    height: 0;
+    border-top: rem(25) solid transparent;
+    border-right: rem(25) solid $white;
+    border-bottom: rem(0) solid transparent;
 }
