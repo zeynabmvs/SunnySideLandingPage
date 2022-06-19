@@ -1,16 +1,12 @@
 .gallery {
-    display: grid;
-    height: 28rem;
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    flex-wrap: wrap;
 
-    @include breakpoint-up(medium) {
-        grid-template: repeat(1, 1fr) / repeat(4, 1fr);
+    picture {
+        display: inline-block;
+        width: 50%;
 
-    }
-    
-    &__item {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include breakpoint-up(medium) {
+            width: 25%;
+        }
     }
 }

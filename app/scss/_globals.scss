@@ -19,6 +19,15 @@ body {
 
 }
 
+img {
+    margin: 0;
+    vertical-align: middle;
+}
+
+picture {
+    margin: 0;
+}
+
 h1, h2, h3 {
     margin-top: rem(0);
     font-family: $ff-fraunces;
