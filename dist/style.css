@@ -257,14 +257,13 @@ a, a:visited, a:hover {
   font-family: "Fraunces", serif;
   text-align: center;
   letter-spacing: 0.4375rem;
-  padding: 4.0625rem;
+  padding: 4.0625rem 0rem;
 }
 @media (min-width: 50em) {
   .header__text {
-    padding: 5.125rem;
+    padding: 5.125rem 0rem;
   }
 }
-
 .triangle {
   position: absolute;
   top: -rem(25);
