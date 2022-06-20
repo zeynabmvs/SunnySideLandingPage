@@ -295,12 +295,12 @@ a, a:visited, a:hover {
 .feature {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(4, auto) 600px 600px;
 }
 @media (min-width: 50em) {
   .feature {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 400px);
+    grid-template-rows: repeat(3, 50vw);
   }
 }
 .feature .article {
@@ -357,14 +357,9 @@ a, a:visited, a:hover {
 }
 .feature .picture img {
   width: 100%;
-  max-height: 100%;
-  overflow: hidden;
-  margin: 0 auto;
-}
-@media (min-width: 50em) {
-  .feature .picture img {
-    width: 50vw;
-  }
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .feature .bg-cherry {
   background-image: url("/images/mobile/image-graphic-design.jpg");
