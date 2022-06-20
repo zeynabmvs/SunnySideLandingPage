@@ -34,9 +34,10 @@
         }
     
         &__title {
-            font-size: rem(28);
+            font-size: rem(30);
             color: $veryDarkDesaturatedBlue;
             width: 70%;
+            font-weight: 900;
         }
     
         &__text {
@@ -104,6 +105,7 @@
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
+        font-size: rem(26);
                 
         @include breakpoint-up(medium) {
             padding: 35px;

@@ -323,9 +323,10 @@ a, a:visited, a:hover {
   width: 70%;
 }
 .feature .article__title {
-  font-size: 1.75rem;
+  font-size: 1.875rem;
   color: hsl(212deg, 27%, 19%);
   width: 70%;
+  font-weight: 900;
 }
 .feature .article__text {
   font-size: 1.0625rem;
@@ -386,6 +387,7 @@ a, a:visited, a:hover {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  font-size: 1.625rem;
 }
 @media (min-width: 50em) {
   .feature .img-text {
