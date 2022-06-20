@@ -4,14 +4,13 @@
     @include breakpoint-up(medium) {
         flex-direction: row;
     }
+}
 
-    picture img {
-        width: 100%;
+.box-picture img {
+    width: 100%;
 
-        @include breakpoint-up(medium) {
-            width: 50vw;
-        }
-
+    @include breakpoint-up(medium) {
+        width: 50vw;
     }
 
 }
@@ -80,142 +79,145 @@
 .section-3 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 700px 700px;
+    grid-template-rows: repeat(4, 700px);
 
     @include breakpoint-up(medium) {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 402px;  
-    }
-
-    .item-cherry {
-        background-image: url('/images/mobile/image-graphic-design.jpg');
-
-        @include breakpoint-up(medium) {
-            background-image: url('/images/desktop/image-graphic-design.jpg');
-        }
-    }
-
-    .item-orange {
-        background-image: url('/images/mobile/image-photography.jpg');
-        
-        @include breakpoint-up(medium) {
-            background-image: url('/images/desktop/image-photography.jpg');
-        }
+        grid-template-rows: repeat(2, 400px);  
     }
 
     &__item {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        text-align: center;
-        padding: 35px 10px;
-        
-        @include breakpoint-up(medium) {
-            padding: 35px;
-        }
     }
 
+}
+
+
+.box-image-text {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 35px 10px;
+            
+    @include breakpoint-up(medium) {
+        padding: 35px;
+    }
+    
     &__title {
         font-weight: 900;
     }
-
-    &__text {
-    }
 }
 
-.feature {
-    display: grid;
-    grid-template: repeat(2, 1fr) / 1fr;
+.item-cherry {
+    background-image: url('/images/mobile/image-graphic-design.jpg');
 
     @include breakpoint-up(medium) {
-        grid-template: repeat(1, 1fr) / repeat(2, 1fr);
-    }
-
-    &__wrapper {
-        padding: 4.4375rem 1.75rem 4.1875rem 1.75rem;
-    }
-
-    .text-box {
-        background-color: $white;
-        margin: auto;
-
-        @include breakpoint-up(medium) {
-            width: 65%;
-
-        }
-
-        &__title {
-            color: $veryDarkDesaturatedBlue;    
-            margin-bottom: 2.9375rem;
-            width: 70%;
-        }
-
-        &__text {
-            margin-bottom: 2.9375rem;
-        }
-
-        &__more {
-            position: relative;
-            font-family: $ff-fraunces;
-            color: $veryDarkDesaturatedBlue;
-            font-size: 0.75rem;
-            font-weight: 800;
-            z-index: 1;
-            margin-bottom: 2.9375rem;
-
-            &::before {
-                content: " ";
-                display: block;
-                position: absolute;
-                background-color: $yellow;
-                height: rem(8);
-                width: 114%;
-                border-radius: 31.25rem;
-                top: 0.625rem;
-                left: -0.3125rem;
-                opacity: 36%;
-                z-index: -1;
-            }
-
-            &:hover::before {
-                opacity: 100%;
-            }
-        }
-    }
-
-    .image-box {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .it-box {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: rem(10);
-
-        color: $darkDesaturatedCyan;
-        text-align: center;
-
-        min-height: 37.5rem;
-
-        display: flex;
-        justify-content: end;
-        align-content: center;
-        flex-direction: column;
-
-        &__title {
-            font-weight: 900;
-        }
-
-        p {
-            color: $darkDesaturatedCyan;
-
-        }
+        background-image: url('/images/desktop/image-graphic-design.jpg');
     }
 }
+
+.item-orange {
+    background-image: url('/images/mobile/image-photography.jpg');
+    
+    @include breakpoint-up(medium) {
+        background-image: url('/images/desktop/image-photography.jpg');
+    }
+}
+
+
+// .feature {
+//     display: grid;
+//     grid-template: repeat(2, 1fr) / 1fr;
+
+//     @include breakpoint-up(medium) {
+//         grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+//     }
+
+//     &__wrapper {
+//         padding: 4.4375rem 1.75rem 4.1875rem 1.75rem;
+//     }
+
+//     .text-box {
+//         background-color: $white;
+//         margin: auto;
+
+//         @include breakpoint-up(medium) {
+//             width: 65%;
+
+//         }
+
+//         &__title {
+//             color: $veryDarkDesaturatedBlue;    
+//             margin-bottom: 2.9375rem;
+//             width: 70%;
+//         }
+
+//         &__text {
+//             margin-bottom: 2.9375rem;
+//         }
+
+//         &__more {
+//             position: relative;
+//             font-family: $ff-fraunces;
+//             color: $veryDarkDesaturatedBlue;
+//             font-size: 0.75rem;
+//             font-weight: 800;
+//             z-index: 1;
+//             margin-bottom: 2.9375rem;
+
+//             &::before {
+//                 content: " ";
+//                 display: block;
+//                 position: absolute;
+//                 background-color: $yellow;
+//                 height: rem(8);
+//                 width: 114%;
+//                 border-radius: 31.25rem;
+//                 top: 0.625rem;
+//                 left: -0.3125rem;
+//                 opacity: 36%;
+//                 z-index: -1;
+//             }
+
+//             &:hover::before {
+//                 opacity: 100%;
+//             }
+//         }
+//     }
+
+//     .image-box {
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//     }
+
+//     .it-box {
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         padding: rem(10);
+
+//         color: $darkDesaturatedCyan;
+//         text-align: center;
+
+//         min-height: 37.5rem;
+
+//         display: flex;
+//         justify-content: end;
+//         align-content: center;
+//         flex-direction: column;
+
+//         &__title {
+//             font-weight: 900;
+//         }
+
+//         p {
+//             color: $darkDesaturatedCyan;
+
+//         }
+//     }
+// }
