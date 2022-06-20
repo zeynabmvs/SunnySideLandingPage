@@ -455,18 +455,18 @@ a, a:visited, a:hover {
   letter-spacing: 0.1875rem;
   margin: 2rem 0;
 }
-.testimonial .c__item {
+.testimonial .client__item {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
 }
 @media (min-width: 50em) {
-  .testimonial .c__item {
+  .testimonial .client__item {
     gap: 2rem;
   }
 }
-.testimonial .c__image {
+.testimonial .client__image {
   height: 4.5rem;
   width: 4.5rem;
   border-radius: 50%;
@@ -474,15 +474,15 @@ a, a:visited, a:hover {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.testimonial .c__text {
+.testimonial .client__text {
   color: hsl(232deg, 10%, 55%);
   margin-bottom: 0;
 }
-.testimonial .c__name {
+.testimonial .client__name {
   font-family: "Fraunces", serif;
   color: hsl(212deg, 27%, 19%);
 }
-.testimonial .c__job {
+.testimonial .client__job {
   color: hsl(210deg, 4%, 67%);
   font-size: 0.9375rem;
 }
