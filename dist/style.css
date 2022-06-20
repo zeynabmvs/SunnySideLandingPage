@@ -128,7 +128,6 @@ h2 {
 p {
   line-height: 1.5;
   margin: 0;
-  color: hsl(232deg, 10%, 55%);
   font-size: 1.0625rem;
 }
 
@@ -189,6 +188,9 @@ a, a:visited, a:hover {
 }
 .tcolor-darkblue {
   color: hsl(198deg, 62%, 26%);
+}
+.tcolor-darkgrayishblue {
+  color: hsl(232deg, 10%, 55%);
 }
 
 .header {
@@ -529,7 +531,6 @@ a, a:visited, a:hover {
 }
 .testimonial .client__text {
   color: hsl(232deg, 10%, 55%);
-  margin-bottom: 0;
 }
 .testimonial .client__name {
   font-family: "Fraunces", serif;

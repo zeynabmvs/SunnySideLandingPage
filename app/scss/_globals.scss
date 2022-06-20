@@ -59,7 +59,6 @@ h2 {
 p {
     line-height: 1.5;
     margin: 0;
-    color: $darkGrayishBlue;
     font-size: 1.0625rem;
 }
 
@@ -127,5 +126,9 @@ a, a:visited, a:hover {
 
     &-darkblue {
         color: $darkBlue;
+    }
+
+    &-darkgrayishblue{
+        color: $darkGrayishBlue;
     }
 }
