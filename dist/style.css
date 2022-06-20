@@ -321,12 +321,12 @@ a, a:visited, a:hover {
   width: 70%;
 }
 .article__title {
-  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-size: 1.75rem;
   color: hsl(212deg, 27%, 19%);
   width: 70%;
 }
 .article__text {
-  font-size: clamp(0.75rem, 1vw, 1.25rem);
+  font-size: 1.0625rem;
 }
 .article__link {
   position: relative;
@@ -341,11 +341,11 @@ a, a:visited, a:hover {
   display: block;
   position: absolute;
   background-color: hsl(51deg, 100%, 49%);
-  height: 0.5rem;
-  width: 27%;
+  height: 8px;
+  width: 94px;
   border-radius: 31.25rem;
   top: 0.625rem;
-  left: -0.3125rem;
+  left: -3px;
   opacity: 36%;
   z-index: -1;
 }
