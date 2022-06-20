@@ -118,3 +118,14 @@ a, a:visited, a:hover {
     font-family: $ff-fraunces;
     padding: rem(17) rem(37);
 }
+
+.tcolor {
+    
+    &-darkdesaturatedcyan {
+        color: $darkDesaturatedCyan;
+    }
+
+    &-darkblue {
+        color: $darkBlue;
+    }
+}

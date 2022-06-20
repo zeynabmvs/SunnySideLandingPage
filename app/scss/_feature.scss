@@ -77,12 +77,62 @@
     }
 }
 
-.feature {
+.section-3 {
     display: grid;
-    grid-template: repeat(4, 1fr) / 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 700px 700px;
 
     @include breakpoint-up(medium) {
-        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 402px;  
+    }
+
+    .item-cherry {
+        background-image: url('/images/mobile/image-graphic-design.jpg');
+
+        @include breakpoint-up(medium) {
+            background-image: url('/images/desktop/image-graphic-design.jpg');
+        }
+    }
+
+    .item-orange {
+        background-image: url('/images/mobile/image-photography.jpg');
+        
+        @include breakpoint-up(medium) {
+            background-image: url('/images/desktop/image-photography.jpg');
+        }
+    }
+
+    &__item {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        padding: 35px 10px;
+        
+        @include breakpoint-up(medium) {
+            padding: 35px;
+        }
+    }
+
+    &__title {
+        font-weight: 900;
+    }
+
+    &__text {
+    }
+}
+
+.feature {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 1fr;
+
+    @include breakpoint-up(medium) {
+        grid-template: repeat(1, 1fr) / repeat(2, 1fr);
     }
 
     &__wrapper {
