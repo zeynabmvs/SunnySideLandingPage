@@ -8,6 +8,9 @@
         grid-template-rows: repeat(3, 50vw);
     }
 
+    &__item {
+    }
+
     .article {
         display: flex;
         flex-direction: column;
@@ -16,7 +19,6 @@
     
         @include breakpoint-up(medium) {
             padding: 0rem 2em;
-            width: 50vw;
             justify-content: center;
             gap: clamp(2rem, 1vw, 2.5rem);
         }
@@ -74,7 +76,7 @@
         height: 100%;
         object-fit: cover;
     }
-    
+
     .bg-cherry {
         background-image: url('/images/mobile/image-graphic-design.jpg');
     
