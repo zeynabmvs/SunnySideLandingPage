@@ -5,7 +5,7 @@
 
     @include breakpoint-up(medium){
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 50vw);
+        grid-template-rows: repeat(3, 500px);
     }
 
     &__item {

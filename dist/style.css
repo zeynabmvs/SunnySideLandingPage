@@ -300,7 +300,7 @@ a, a:visited, a:hover {
 @media (min-width: 50em) {
   .feature {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 50vw);
+    grid-template-rows: repeat(3, 500px);
   }
 }
 .feature .article {
