@@ -27,7 +27,3 @@ $breakpoints-down: ("small": "49.9375em", "medium": "63.9375em", "large": "64em"
         @content;
     }
 }
-
-@mixin color-opacity($color, $opacity, $property) {
-    #{$property}: rgba($color, $opacity);
- }
